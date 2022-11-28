@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+ <body>
+ </body>
+<script>
+
+    let doanhso = +prompt("Nhập doanh số bán hàng vào đây :");
+    let hoaHong;
+    if (doanhso>=1000000){
+        hoaHong = (doanhso/100)*20;
+        document.write(" Tiền hoa hồng bạn nhận được là 20% <br>Số tiền bạn nhận được là "+hoaHong)
+    }else if (doanhso>=100000){
+        hoaHong = (doanhso/100)*5;
+        document.write("Tiền hoa hồng bạn nhận được là 5% <br>Số tiền bạn nhận được là "+hoaHong)
+    }else {
+        hoaHong = (doanhso/100)*3;
+        document.write("Tiền hoa hồng bạn nhận được là 3% <br>Số tiền bạn nhận được là "+ hoaHong);
+
+    }
+
+
+</script>
+</html>
