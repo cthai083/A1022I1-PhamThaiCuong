@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.
+        Điều kiện để a,b,c là cạnh của một tam giác</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt("Nhập số của a : ") ;
+    let b = +prompt("Nhập số của b : ") ;
+    let c =+prompt("Nhập số của c ");
+    if (a >0 & c>0 & b>0 ){
+        document.write("Là cạnh của 1 tam giác");
+    }
+     else if ((a+b)>c)
+    {
+        document.write("Là cạnh của 1 tam giác");
+    }
+    else if ((b+c)>a)
+    {
+        document.write("Là cạnh của 1 tam giác");
+    }
+      else if ((a+c)>b)
+    {
+        document.write("Là cạnh của 1 tam giác");
+    }
+      else {
+        document.write("Mời bạn nhập lại !");
+    };
+</script>
+</html>
