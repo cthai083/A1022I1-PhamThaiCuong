@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2.</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt("Nhập số a vào đây : ") ;
+    let b = +prompt("Nhập số b vào đây : ") ;
+    let c = +prompt("Nhập số c vào đây : ") ;
+    const delta = b*b - 4*a*c;
+    let x1 = (-b + Math.sqrt(delta))/ (2*a);
+    let x2 = (-b - Math.sqrt(delta))/ (2*a);
+    if (delta < 0){
+        alert("Phương trình đó vô nghiệm : ");
+    } else if (delta > 0){
+        alert("Phương trình đó có 2 nghiệm phân biệt : " + "x1 = " + x1 +"và" + "x2 =" + x2);
+    }else {
+        alert("Phương trình đó có 1 nghiệm kép : " + x1);
+    }
+</script>
+</html>
